@@ -15,12 +15,10 @@ app.use(cors());
 app.use(express.json());
 app.use(logger('dev'));
 
-// PUBLIC ROUTES
-
-// PRIVATE ROUTES
+// ROUTES
 app.use('/auth', authRouter);
 app.use('/test-jwt', testJwtRouter);
-app.use('/users.js', )
+
 // LISTENER
 app.listen(3000, () => {
   console.log('The express app is ready!');
